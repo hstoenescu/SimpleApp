@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="simple.eim.systems.cs.pub.ro.simpleapp.SimpleAppMainActivity">
+
+
+    <Button
+        android:id="@+id/press1_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="99dp"
+        android:text="@string/press_me1" />
+
+    <Button
+        android:id="@+id/press2_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:text="@string/press_mes2"
+        android:layout_alignTop="@+id/press1_button" />
+
+    <EditText
+        android:id="@+id/left_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/press2_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:ems="6"
+        android:enabled="false"
+        android:saveEnabled="false"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/right_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/press2_button"
+        android:layout_alignEnd="@+id/press2_button"
+        android:layout_alignRight="@+id/press2_button"
+        android:ems="6"
+        android:enabled="false"
+        android:saveEnabled="false"
+        android:inputType="number" />
+
+
+</RelativeLayout>
